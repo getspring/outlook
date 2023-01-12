@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #5a5c69;
+    background: #f0f0f0;
+    font-family: helvetica neue, Helvetica, Arial, sans-serif
+}
+
+/* 多行文本节段 */
+
+
+
+/* 日历样式
+---------------------------------------------------*/
+/* 日历的加载样式，防止翻页造成太大的视觉变化 */
+.cal_loading {
+    margin-bottom: 243px
+}
+
+#calendar {
+    color: #212529
+}
+
+#calendar a {
+    color: #000;
+    font-weight: bolder
+}
+
+.calendartop {
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000
+}
+
+.calendartop a {
+    font-weight: 100 !important
+}
+
+.calendar {
+    margin-bottom: -10px;
+    width: 100%
+}
+
+.calendar td {
+    text-align: center;
+    padding: 1px 10px;
+    line-height: 1.6
+}
+
+.calendar td a:link {
+    color: #886353;
+    text-decoration: none
+}
+
+.calendar td a:hover {
+    color: #886353;
+    text-decoration: none
+}
+
+.calendar tr {
+    height: 40px
+}
+
+.day {
+    color: #212529;
+    background: #eaeaea;
+    border-radius: var(--marRadius)
+}
+
+.sun {
+    color: #333
+}
+
+.week {
+    color: #333
+}
+
+
+/* 评论样式
+---------------------------------------------------*/
+/* 发表评论表单样式 */
+@media (min-width:768px) {
+    .commentform {
+        height: 250px
+    }
+}
+
+#comment-place {
+    margin-top: 80px;
+}
+
+.comment-name {
+    float: left;
+    border-bottom-left-radius: 10px !important
+}
+
+.comment-mail {
+    float: left
+}
+
+.comment-url {
+    border-right: 1px #d6d6d6 solid !important;
+    border-bottom-right-radius: 10px !important
+}
+
+.form-controls {
+    display: block;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-out, box-shadow 0.15s ease-in-out
+}
+
+.comment-info {
+    width: auto
+}
+
+.com_control {
+    display: block;
+    border-radius: 0px;
+    border: 1px #d6d6d6 solid;
+    border-right: 0px;
+    height: 50px
+}
+
+/* 评论处的输入框提示，居中、隐藏 */
+.com_control:focus::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0)
+}
+
+.com_control::-webkit-input-placeholder {
+    color: rgba(116, 116, 116, 0.336)
+}
+
+@media (min-width:578px) {
+    .com_control::-webkit-input-placeholder {
+        text-align: center
+    }
+}
+
+.comment-header {
+    margin-block: 30px;
+    height: 0
+}
+
+.comment-post {
+    clear: both
+}
+
+.comment-post p {
+    margin: 5px 0px
+}
+
+.comment-post .cancel-reply {
+    float: right;
+    cursor: pointer;
+    padding-right: 10%
+}
+
+.comment-post .cancel-reply:hover {
+    text-decoration: underline
+}
+
+.comment-post small {
+    font-size: 12px;
+    color: #999
+}
+
+.comment-post input {
+    padding: 7px 40px;
+    font-size: small;
+    color: #848797;
+    width: 33.3333334%
+}
+
+.comment-post #comment {
+    width: 100%;
+    border: 1px #d6d6d6 solid;
+    font-size: small;
+    border-radius: var(--marRadius) 10px 0 0;
+    height: 130px;
+    resize: none
+}
+
+.comment-post #comment_submit {
+    width: 84px;
+    height: 35px;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0px;
+    float: right;
+    margin-right: 1px;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    padding: 7px 10px;
+    justify-content: center
+}
+
+.comment-post #comment_submit:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff
+}
+
+.comment-post .input {
+    width: 100px
+}
+
+.comment {
+    margin: 10px 0;
+    padding: 10px 0px;
+    font-size: medium;
+    border-bottom: 1px #f7f7f7 solid;
+    overflow: hidden;
+    color: #333
+}
+
+.comment span {
+    color: #ff7a15
+}
+
+.comment .comment-time {
+    color: #999999;
+    display: inline;
+    font-size: 10px
+}
+
+.comment .avatar {
+    float: left;
+    margin: 5px 4px
+}
+
+.comment .comment-infos {
+    background: #f7f7f7;
+    padding: 12px;
+    padding-bottom: 5px;
+    border-radius: var(--marRadius);
+    margin-top: 9px;
+    margin-left: 58px
+}
+
+.comment .comment-infos-unGravatar {
+    padding: 5px
+}
+
+.com-bottom {
+    margin-bottom: 80px;
+}
+
+
+
+/* 评论列表中指向评论者头像的箭头 */
+.arrow {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -34px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent #f7f7f7 transparent transparent
+}
+
+.comment .comment-content {
+    margin: 8px 0px 0px 0px;
+    word-break: break-word
+}
+
+.comment .comment-reply {
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: -15px
+}
+
+.comment .comment-reply:hover {
+    text-decoration: underline
+}
+
+.comment-children {
+    margin: 20px 10px 10px 20px;
+    clear: both;
+    border: none;
+    padding: 0
+}
+
+.comment .comment-post {
+    width: 90%;
+    margin: 15px auto
+}
+
+.comment-info {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: -8px;
+    white-space: nowrap
+}
+
+/* 边栏处的最新评论信息margin-top应该是0 */
+.unstyle-li .comment-info {
+    margin-top: 4px
+}
+
+.cancel-reply {
+    font-size: large
+}
+
+/* 评论人的头像 */
+.avatar img {
+    width: 40px;
+    margin-top: 9px;
+    margin-right: 4px;
+    border-radius: 50%
+}
+
+.unstyle-li input[type="submit"] {
+    background-color: #313131;
+    color: #FFFFFF;
+    margin-left: -25px;
+    height: 39px;
+    width: 55px;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    padding: 0
+}
+
+/* 评论区的 回复、取消回复 按钮 */
+.comment-replay-btn {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: unset
+}
+
+.comment-replay-btn:hover {
+    color: #f6607d;
+    text-decoration: underline;
+    transition: all 0.2s
+}
+
+
+/* 图片放大
+---------------------------------------------------*/
+img[data-action="zoom"] {
+    cursor: zoom-in
+}
+
+.zoom-img,
+.zoom-img-wrap {
+    position: relative;
+    z-index: 666;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+img.zoom-img {
+    cursor: zoom-out
+}
+
+.zoom-overlay {
+    z-index: 420;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    transition: opacity 300ms;
+}
+
+.zoom-overlay-open .zoom-overlay {
+    opacity: 1;
+}
+
+.zoom-overlay-open,
+.zoom-overlay-transitioning {
+    cursor: default;
+}
+
+.cover-unclip {
+    /* 放大后的图片无裁剪、无圆角、无透明度 */
+    clip: unset !important;
+    border-radius: unset !important;
+    opacity: 1 !important
+}
